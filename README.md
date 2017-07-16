@@ -42,8 +42,13 @@ Simply add the desired page size to the class options as you would with any othe
 
 Any other options can be used normally (i.e. `11pt` or `openany`).
 
+## Installation
+
+Place the `kdp.cls` file in the folder where your main `.tex` file is and it will be found. The more abitious can place it in their `$TEXMFHOME` folder (usually `/home/<user>/texmf/tex`).
+
 ## Notes
 
 The paper will remain at the default size (letter/A4) when displaying the PDF. Add the `geometry` package to have the PDF "trimmed" to the right size. This is also a good idea as it makes setting margins easy (the default LaTeX margins don't work well at paperback sizes). If your book requires extra width for full-page bleeds, consult the [guide](https://images-na.ssl-images-amazon.com/images/G/01/00/01/00/02/17/60/10002176030.pdf) to set the page size.
 
 See the [MWE file](https://github.com/JenniferMack/latex-kdp/blob/master/kdp.tex) to get started. It also shows how to use the `geometry` package with the most recent LuaLaTeX (TeXLive 2017).
+
